@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+echo "Hello from scripty"
+echo $TRAVIS_PULL_REQUEST
+
+if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+  surge --project ./dist --domain auto-deploy-test.surge.sh
+else
+  echo "This is a PR, not deploying"
+fi
