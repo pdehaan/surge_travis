@@ -21,4 +21,6 @@ const contents = `<!doctype html>
 </body>
 </html>`;
 
-writeFile(join('dist', 'index.html'), contents, 'utf-8');
+writeFile(join("dist", "index.html"), contents, "utf-8");
+
+console.log("index rebuilt for SHA: %s", process.env.TRAVIS_COMMIT);
