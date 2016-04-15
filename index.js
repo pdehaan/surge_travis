@@ -3,6 +3,9 @@ const join = require("path").join;
 
 const contents = `<!doctype html>
 <html>
+<head>
+  <title>${process.env.TRAVIS_REPO_SLUG}</title>
+</head>
 <body>
 <h1>${process.env.TRAVIS_REPO_SLUG}</h1>
 <strong>${process.env.TRAVIS_NODE_VERSION}</strong>
