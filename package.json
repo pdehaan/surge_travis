@@ -1,0 +1,21 @@
+{
+  "name": "surge_travis",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com> (http://nodeexamples.com/)",
+  "bugs": {
+    "url": "https://github.com/pdehaan/surge_travis/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "surge": "0.17.7"
+  },
+  "homepage": "https://github.com/pdehaan/surge_travis#readme",
+  "keywords": [],
+  "license": "WTFPL",
+  "main": "index.js",
+  "repository": "pdehaan/surge_travis",
+  "scripts": {
+    "build": "node index",
+    "deploy": "surge --project ./dist --domain auto-deploy-test.surge.sh"
+  }
+}
