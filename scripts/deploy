@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+echo "Hello from scripty"
+echo $TRAVIS_PULL_REQUEST
+
+surge --project ./dist --domain auto-deploy-test.surge.sh

@@ -7,15 +7,16 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "scripty": "1.2.1",
     "surge": "0.17.7"
   },
-  "homepage": "https://github.com/pdehaan/surge_travis#readme",
+  "homepage": "https://auto-deploy-test.surge.sh",
   "keywords": [],
   "license": "WTFPL",
   "main": "index.js",
   "repository": "pdehaan/surge_travis",
   "scripts": {
     "build": "node index",
-    "deploy": "surge --project ./dist --domain auto-deploy-test.surge.sh"
+    "deploy": "scripty"
   }
 }
